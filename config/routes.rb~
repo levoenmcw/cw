@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
-  #get "users/new"
+  resources :users
+
+  root 'pages#landing'
+  
+  get "users/new"
   #get "pages/help"
   #get "pages/about"
   #get "pages/landing"
   #get "pages/contact"
-  root 'pages#landing'
 
 
   match '/signup', to: 'users#new', via: 'get'
