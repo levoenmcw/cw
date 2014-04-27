@@ -1,10 +1,10 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="navbar-inner">
     <div class="container">
-      <%= link_to "Clean Water", root_path, id: "logo" %>
+      <%= link_to "sample app", root_path, id: "logo" %>
       <nav>
-        <ul class="change_nav pull-right">
-          <li class="dropdown"><%= link_to "Home",    root_path %></li>
+        <ul class="nav pull-right">
+          <li><%= link_to "Home",    root_path %></li>
           <li><%= link_to "Help",    help_path %></li>
           <li><%= link_to "Sign in", '#' %></li>
         </ul>
