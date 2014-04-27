@@ -1,2 +1,10 @@
-<h1>Pages#help</h1>
-<p>Find me in app/views/pages/help.html.erb</p>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Clean Water Help pages</title>
+</head>
+<body>
+<h1>Help pages</h1>
+<p>Here you will find help pages</p>
+</body>
+</html>

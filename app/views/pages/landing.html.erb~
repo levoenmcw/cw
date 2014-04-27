@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Clean Water</title>
-</head>
-<body>
+<% provide(:title, 'Welcome') %>
+<div class="center hero-unit">
 <h1>Welcome to Clean Water</h1>
 <p>Water of your dreams</p>
-</body>
-</html>
+<%= link_to "Register to replanish and energize our body", signup_path, class: "btn btn-large btn-primary" %>
+</div>
