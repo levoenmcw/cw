@@ -1,6 +1,7 @@
 <% provide(:title, 'Welcome') %>
 <div class="center hero-unit">
 <h1>Welcome to Clean Water</h1>
-<p>Water of your dreams</p>
-<%= link_to "Register to replanish and energize our body", signup_path, class: "btn btn-large btn-primary" %>
+<p>Give it to your body! Water your body wants! </p>
+<%= link_to "Register to replanish and energize your body", signup_path, class: "btn btn-large btn-primary" %>
 </div>
+<%= link_to image_tag("rails.png", alt: "To be replaced"), 'http://google.com/' %>
