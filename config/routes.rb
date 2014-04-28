@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :users
-
+  resources :sessions, only: [:new, :create, :destroy]
   root 'pages#landing'
   
   #get "users/new"
@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   #get "pages/landing"
   #get "pages/contact"
 
+  match '/login',  to: 'sessions#new',         via: 'get'
+  match '/logout', to: 'sessions#destroy',     via: 'delete'
 
   match '/signup', to: 'users#new', via: 'get'
   match '/help', to: 'pages#help', via: 'get'
