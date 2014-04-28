@@ -41,4 +41,7 @@ gem 'spring',        group: :development
 gem 'bootstrap-sass'
 gem 'bcrypt-ruby'
 gem 'sprockets'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
+
 
