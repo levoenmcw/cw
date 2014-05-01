@@ -43,5 +43,6 @@ gem 'bcrypt-ruby'
 gem 'sprockets'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+gem 'omniauth-facebook'
 
 

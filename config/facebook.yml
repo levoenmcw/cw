@@ -1,0 +1,13 @@
+development:
+app_id: 242824305841355
+secret: fb9e454c38fdeaa364ef59a6c94f6842
+
+test:
+app_id: 242824305841355
+secret: fb9e454c38fdeaa364ef59a6c94f6842
+
+production:
+app_id: 242824305841355
+secret: fb9e454c38fdeaa364ef59a6c94f6842
+
+

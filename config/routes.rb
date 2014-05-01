@@ -9,6 +9,11 @@ Rails.application.routes.draw do
   #get "pages/landing"
   #get "pages/contact"
 
+match 'auth/:provider/callback', to: 'sessions#create_fb', via: 'get'
+match 'auth/failure', to: redirect('/'), via: 'get'
+#check this
+match 'logout', to: 'sessions#destroy', as: 'logout', via: 'get'
+
   match '/login',  to: 'sessions#new',         via: 'get'
   match '/logout', to: 'sessions#destroy',     via: 'delete'
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140428000431) do
+ActiveRecord::Schema.define(version: 20140429211028) do
 
   create_table "users", force: true do |t|
     t.string   "name"
@@ -20,6 +20,11 @@ ActiveRecord::Schema.define(version: 20140428000431) do
     t.datetime "updated_at"
     t.string   "password_digest"
     t.string   "remember_token"
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "oath_token"
+    t.datetime "oath_expires_at"
+    t.string   "user_name"
   end
 
   add_index "users", ["remember_token"], name: "index_users_on_remember_token", using: :btree
