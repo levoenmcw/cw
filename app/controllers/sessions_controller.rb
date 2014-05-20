@@ -6,7 +6,8 @@ class SessionsController < ApplicationController
 def create_fb
 user=User.from_omniauth(env["omniauth.auth"])
 session[:user_id] = user.id
-redirect_to root_path
+#redirect_to root_path
+
 end
   
 def create
@@ -15,7 +16,7 @@ def create
       login user
       redirect_back_or user
     else
-      flash.now[:error] = 'Invalid email/password combination'
+      flash.now[:danger] = 'Invalid email/password combination'
       render 'new'
     end
   end

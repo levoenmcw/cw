@@ -1,17 +1,18 @@
 @import "bootstrap";
-/* mixings, variables, etc. */
-@mixin box_sizing {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-$lightGray: #999;
+//@import "bootstrap-responsive";
+
+/* mixins, variables, etc. */
+
+$gray_mediumlight: #eaeaea;
+
 /* universal */
+
 html {
   overflow-y: scroll;
 }
+
 body {
-  padding-top: 60px
+  padding-top: 60px;
 }
 
 section {
@@ -28,6 +29,7 @@ textarea {
     margin-bottom: 10px;
   }
 }
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -47,7 +49,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $lightGray;
+  color: $gray_light;
 }
 
 p {
@@ -55,41 +57,43 @@ p {
   line-height: 1.7em;
 }
 
+
 /* header */
 
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
+  color: white;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: #fff;
+    color: white;
     text-decoration: none;
   }
 }
+
 /* footer */
 
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #999;
+  border-top: 1px solid $gray_mediumlight;
+  color: $gray_light;
   a {
-    color: #555;
+    color: $gray;
     &:hover {
-      color: #222;
+      color: $gray_darker;
     }
   }
   small {
     float: left;
   }
   ul {
-    float: right;
+    float: right !important;
     list-style: none;
     li {
       float: left;
@@ -97,22 +101,38 @@ footer {
     }
   }
 }
+
 /* miscellaneous */
+
+
+
 
 .debug_dump {
   clear: both;
   float: left;
   width: 100%;
   margin-top: 45px;
-  @include box_sizing;
+  //@include box_sizing;
 }
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  //@include box_sizing(border-box);
+}
+
+input {
+  height: auto !important;
+}
+
 
 /* sidebar */
 
 aside {
   section {
     padding: 10px 0;
-    border-top: 1px solid $lightGray;
+    border-top: 1px solid $gray_light;
     &:first-child {
       border: 0;
       padding-top: 0;
@@ -143,7 +163,7 @@ input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
-  @include box_sizing;
+  //@include box_sizing;
 }
 
 input {
@@ -188,9 +208,9 @@ images/figures/signup_error_messages_bootstrap
   li {
     overflow: auto;
     padding: 10px 0;
-    border-top: 1px solid $lightGray;
+    border-top: 1px solid $gray_light;
     &:last-child {
-      border-bottom: 1px solid $lightGray;
+      border-bottom: 1px solid $gray_light;
     }
   }
 }

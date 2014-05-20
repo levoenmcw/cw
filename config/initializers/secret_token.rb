@@ -11,7 +11,7 @@ end
 end
 
 # luba was commented?
-Cleanwater:Application.config.secret_key_base = secure_token
-#Rails.Application.config.secret_key_base=secure_token
+Cleanwater::Application.config.secret_key_base = secure_token
+#Rails::Application.config.secret_key_base=secure_token
 
 
